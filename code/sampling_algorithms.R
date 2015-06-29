@@ -9,7 +9,7 @@ simulate.irt <- function(n=435, m=100){
     require(MASS)
 
     # simulating latent variable
-    theta <- rnorm(n=n, mean=0, sd=2)
+    theta <- rnorm(n=n, mean=0, sd=1)
     # simulating item parameters
     item.params <- mvrnorm(n=m, mu=c(0,0), Sigma=1*diag(2))
 
